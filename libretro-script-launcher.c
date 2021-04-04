@@ -43,13 +43,13 @@ void retro_set_controller_port_device(unsigned port, unsigned device)
 void retro_get_system_info(struct retro_system_info *info)
 {
    memset(info, 0, sizeof(*info));
-   info->library_name     = "Dolphin Launcher";
+   info->library_name     = "Script Launcher";
 #ifndef GIT_VERSION
 #define GIT_VERSION ""
 #endif
    info->library_version  = "1.2.0" GIT_VERSION;
    info->need_fullpath    = true;
-   info->valid_extensions = "elf|dol|gcm|iso|wbfs|ciso|gcz|wad";
+   info->valid_extensions = "sh|bash|bat|exe|*";
 }
 
 static retro_video_refresh_t video_cb;
@@ -124,7 +124,7 @@ void retro_reset(void)
 /**
  * libretro callback; Called every game tick.
  *
- * Once the core has run, we will attempt to exit, since Dolphin is done.
+ * Once the core has run, we will attempt to exit, since Script is done.
  */
 void retro_run(void)
 {
@@ -132,7 +132,7 @@ void retro_run(void)
    unsigned stride = 320;
    video_cb(frame_buf, 320, 240, stride << 2);
 
-   // Shutdown the environment now that Dolphin has loaded and quit.
+   // Shutdown the environment now that Script has loaded and quit.
    environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, NULL);
 }
 
@@ -151,7 +151,7 @@ bool retro_load_game(const struct retro_game_info *info)
 
    // Check if running Dolphin works.
    if (system(command) == 0) {
-      printf("libretro-dolphin-launcher: Completed dolphin-emu-nogui\n");
+      printf("libretro-script-launcher: Completed dolphin-emu-nogui\n");
       return true;
    }
    printf("libretro-dolphin-launcher: dolphin-emu-nogui not found. Attempting dolphin-emu...\n");
