@@ -1,7 +1,7 @@
 # libretro-script-launcher
 
 (Note: I lost one of the source code files, so compiling will result in a broken core; I am working on rewriting the code.
-For the time being, I only have a functional compiled core for x86_64 Linux distributions. You can find it in Releases!)
+For the time being, I have a functional compiled core for x86_64 Linux distributions. You can find it in Releases!)
 
 Launch external scripts and programs from Retroarch!
 
