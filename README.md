@@ -19,14 +19,15 @@ Note: This is a big hack based on code from the [Libretro Dolohin Launcher](http
     ```
 
 2. Copy the core file to the RetroArch cores directory
+   
+   ```bash
+    cp script_launcher_libretro.so ~/.config/retroarch/cores/
+    cp script_launcher_libretro.info ~/.config/retroarch/cores/
+    ```
+    or
     ``` bash
     cp script_launcher_libretro.so /usr/lib/libretro/
     cp script_launcher_libretro.info /usr/share/libretro/info/
-    ```
-    or
-    ```bash
-    cp script_launcher_libretro.so ~/.config/retroarch/cores/
-    cp script_launcher_libretro.info ~/.config/retroarch/cores/
     ```
 
 ## Usage
