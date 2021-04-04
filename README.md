@@ -41,11 +41,12 @@ And that's it!
 With scripts, you can execute multiple programs and perform multiple tasks.
 
 This example is one of my scripts, it accomplishes a few things:
-    1. Opens a controller mapping program with a specific remap file
-    2. Sets variables for Wine
-    3. Navigates to the folder with the executable
-    4. Launches a game
-    5. After the game is closed, it automatically closes the controller mapping software
+
+1. Opens a controller mapping program with a specific remap file
+2. Sets variables for Wine
+3. Navigates to the folder with the executable
+4. Launches a game
+5. After the game is closed, it automatically closes the controller mapping software
 
 ```bash
 #!/bin/bash
@@ -64,18 +65,20 @@ Once the script has finished running, Retroarch should come back up on its own!
 ## Example Playlists
 
 Here's just a couple examples of custom icons/thumbnails I made for my playlists.
-(these specific icons are included in the Images folder for anyone interested!)
-![linuxplaylist](http://github.com/yzzyx-network/libretro-script-launcher/Images/linuxplaylistsample.jpg)
-![wineplaylist](http://github.com/yzzyx-network/libretro-script-launcher/Images/wineplaylistsample.jpg)
+
+(These specific icons are included in the Images folder for anyone interested!)
+![](https://github.com/yzzyx-network/libretro-script-launcher/blob/master/Images/linuxplaylistsample.jpg)
+![](https://github.com/yzzyx-network/libretro-script-launcher/blob/master/Images/wineplaylistsample.jpg)
 
 To add icons like this, follow these steps:
-    1. Make sure you have a custom playlist for your games
-    2. Navigate to the png assets folder for the theme you use
-        (eg. `~/.config/retroarch/assets/xmb/systematic/png`)
-    3. Place the icons in that folder
-        -The icon used for the playlist should have a filename that matches the playlist name
-        -The icon for the games in the playlist should have "-content" added to the filename
-            (eg. `Windows - Wine.png` and `Windows - Wine-content.png`)
+
+1. Make sure you have a custom playlist for your games
+2. Navigate to the png assets folder for the theme you use
+    (eg. `~/.config/retroarch/assets/xmb/systematic/png`)
+3. Place the icons in that folder
+    -The icon used for the playlist should have a filename that matches the playlist name
+    -The icon for the games in the playlist should have "-content" added to the filename
+        (eg. `Windows - Wine.png` and `Windows - Wine-content.png`)
 
 ## Contributors
 
