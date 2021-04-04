@@ -1,5 +1,7 @@
 # libretro-script-launcher
 
+(made this for personal use awhile ago, can't find the modified code so I'm working on recreating it; as such, this doesn't work yet at this moment. it should be done within a day or 2!)
+
 Launch external scripts and programs from Retroarch!
 
 With this core, you can launch any script or program you want! Now you can have your entire PC game library accessible from Retroarch!
