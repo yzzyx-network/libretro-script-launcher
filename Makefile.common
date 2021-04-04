@@ -1,1 +1,1 @@
-SOURCES_C += $(CORE_DIR)/libretro-dolphin-launcher.c
+SOURCES_C += $(CORE_DIR)/libretro-script-launcher.c
