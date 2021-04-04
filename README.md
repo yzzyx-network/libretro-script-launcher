@@ -1,45 +1,42 @@
-# libretro-dolphin-launcher
+# libretro-script-launcher
 
-Launch Nintendo Wii and GameCube games through [Dolphin](https://dolphin-emu.org) native, directly from [RetroArch](http://www.libretro.com/).
+Launch external scripts and programs from Retroarch!
 
-![Dolphin Launcher Screenshot](screenshot.jpg)
+With this core, you can launch any script or program you want! Now you can have your entire PC game library accessible from Retroarch!
 
-Note: This is a big hack, and it's recommended to use the [Dolphin Core](https://github.com/libretro/dolphin) instead.
+Note: This is a big hack based on code from the [Libretro Dolohin Launcher](https://github.com/RobLoach/libretro-dolphin-launcher).
 
 ## Installation
 
 1. Compile the core
     ``` bash
-    git clone https://github.com/RobLoach/libretro-dolphin-launcher.git
-    cd libretro-dolphin-launcher
+    git clone https://github.com/yzzyx/libretro-script-launcher.git
+    cd libretro-script-launcher
     make
     ```
 
 2. Copy the core file to the RetroArch cores directory
     ``` bash
-    cp dolphin_launcher_libretro.so /usr/lib/libretro/
-    cp dolphin_launcher_libretro.info /usr/share/libretro/info/
+    cp script_launcher_libretro.so /usr/lib/libretro/
+    cp script_launcher_libretro.info /usr/share/libretro/info/
     ```
-
-3. Make sure [Dolphin](http://dolphin-emu.org) [is installed](https://dolphin-emu.org/download/?ref=btn). You should be able to run at least one of the following commands:
-    ``` bash
-    dolphin-emu --version
-    dolphin-emu-nogui --version
-    flatpak run org.DolphinEmu.dolphin-emu --version
     ```
 
 ## Usage
 
-1. Scan Nintendo GameCube and Wii games in RetroArch
+0. (Recommended) Make a folder for any scripts, executables, and shortcuts you want in your library
 
-2. Launch the games directly from the RetroArch menu
+1. Perform a manual scan on that folder in Retroarch 
+    -you can specify any filetype, just make sure the file is executable
+    -I recommend manually naming the playlist something appropriate (e.g. "Windows Games" or something)
 
-3. Alternatively, you can run games through the command line
-    ``` bash
-    retroarch -L dolphin_launcher_libretro.so Mario.gcm
-    ```
+2. (Optional) Create thumbnail images for the playlists to make them look pretty
+
+And that's it!
+
 
 ## Contributors
 
+- [yzzyx](http://github.com/yzzyx-network)
 - [Rob Loach](http://github.com/robloach)
 - [Alcaro](https://github.com/Alcaro)
