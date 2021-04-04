@@ -1,6 +1,7 @@
 # libretro-script-launcher
 
-(made this for personal use awhile ago, can't find the modified code so I'm working on recreating it; as such, this doesn't work yet at this moment. it should be done within a day or 2!)
+(Note: I lost one of the source code files, so compiling will result in a broken core; I am working on rewriting the code.
+For the time being, I only have a functional compiled core for x86_64 Linux distributions. You can find it in Releases!)
 
 Launch external scripts and programs from Retroarch!
 
@@ -22,6 +23,10 @@ Note: This is a big hack based on code from the [Libretro Dolohin Launcher](http
     cp script_launcher_libretro.so /usr/lib/libretro/
     cp script_launcher_libretro.info /usr/share/libretro/info/
     ```
+    or
+    ```bash
+    cp script_launcher_libretro.so ~/.config/retroarch/cores/
+    cp script_launcher_libretro.info ~/.config/retroarch/cores/
     ```
 
 ## Usage
