@@ -1,15 +1,21 @@
 # libretro-script-launcher
 
-(Note: I lost one of the source code files, so compiling will result in a broken core; I am working on rewriting the code.
-For the time being, I have a functional compiled core for x86_64 Linux distributions. You can find it in Releases!)
-
 Launch external scripts and programs from Retroarch!
 
 With this core, you can launch any script or program you want! Now you can have your entire PC game library accessible from Retroarch!
 
-Note: This is a big hack based on code from the [Libretro Dolohin Launcher](https://github.com/RobLoach/libretro-dolphin-launcher).
+Note: This core works on Linux, and it should work on MacOS as well. I don't think it will work on Windows unfortunately, but I don't have a Windows computer to test that. It should be very simple to make a Windows version, I just don't know its commands as well.
+Note 2: This is a big hack based on code from the [Libretro Dolohin Launcher](https://github.com/RobLoach/libretro-dolphin-launcher). I only changed a few lines to make this, so there's still some code and comments referencing Dolphin.
 
 ## Installation
+
+#### Method 1 (Linux Only)
+
+1. Download the core from the [Releases](https://github.com/yzzyx-network/libretro-script-launcher/releases) page
+
+2. Extract files to the locations specified in the included `readme.txt`
+
+#### Method 2 (MacOS & Linux)
 
 1. Compile the core
     ``` bash
