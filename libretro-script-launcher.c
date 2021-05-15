@@ -142,7 +142,7 @@ void retro_run(void)
 bool retro_load_game(const struct retro_game_info *info)
 {
    // Launch without the gui if available (Dolphin 5).
-   char command[512] = "dolphin-emu-nogui";
+   char command[512] = ".";
 
    // Check if there is content to load.
    if (info != NULL && info->path != NULL && info->path[0] != '\0') {
@@ -157,7 +157,7 @@ bool retro_load_game(const struct retro_game_info *info)
    printf("libretro-dolphin-launcher: dolphin-emu-nogui not found. Attempting dolphin-emu...\n");
 
    // Dolphin 4 does not have dolphin-emu-nogui.
-   strcpy(command, "dolphin-emu");
+   strcpy(command, ".");
    if (info != NULL && info->path != NULL && info->path[0] != '\0') {
       // Execute with --batch.
       sprintf(command, "%s --batch --exec=\"%s\"", command, info->path);
