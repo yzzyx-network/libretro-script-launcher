@@ -5,7 +5,7 @@ Launch external scripts and programs from Retroarch!
 With this core, you can launch any script or program you want! Now you can have your entire PC game library accessible from Retroarch!
 
 Note: This core works on Linux, and it should work on MacOS as well. I don't think it will work on Windows unfortunately, but I don't have a Windows computer to test that. It should be very simple to make a Windows version, I just don't know its commands as well.
-Note 2: This is a big hack based on code from the [Libretro Dolohin Launcher](https://github.com/RobLoach/libretro-dolphin-launcher). I only changed a few lines to make this, so there's still some code and comments referencing Dolphin.
+Note 2: This is a big hack based on code from the [Libretro Dolphin Launcher](https://github.com/RobLoach/libretro-dolphin-launcher). I only changed a few lines to make this, so there's still some code and comments referencing Dolphin.
 
 ## Installation
 
